@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Muster</title>
+    <link rel="stylesheet" href="./myStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Header tag start from here -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">LH Food Bank</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item me-3">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="#">Recipes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- main body part start from here  -->
+    <main class=container>
+        <section class="my-5">
+            <div class="collectionFromUsers input-group">
+
+                <input id="userDemandFood" class="form-control p-2 border-start-0" type="text"
+                    placeholder=" Input food name for searching..">
+                <br>
+                <button onclick="SearchingFood()" class="btn btn-primary">Search</button>
+            </div>
+        </section>
+        <section class="mb-5" id="selectedFood"></section>
+        <section>
+            <h2 class="text-center text-danger" id="errorMessage"></h2>
+            <div class="row" id="listOfFoods">
+
+            </div>
+            <h2 id="results" class="text-center mt-5">Food Show here</h2>
+        </section>
+    </main>
+
+    <!-- script part here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="myScript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+body{
+    background-color: cadetblue;
+    font-size: 30px;
+}
+.collectionFromUsers{
+    max-width: 570px;
+    margin: 0 auto;
+}
+.meal{
+    border-radius: 15px;
+}
+.foodImage{
+    border-radius: 15px 15px 0 0;
+}
+.selectedFood{
+    max-width: 550px;
+}
